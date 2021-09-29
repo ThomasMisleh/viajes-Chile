@@ -1,0 +1,16 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #000;
+}
+
+.nav-img {
+    width: 27px;
+}
+
+.img-carousel {
+    width: 1500px;
+}
+
+hr {
+   background:  #17bdf0 ;
+}
