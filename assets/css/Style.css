@@ -10,3 +10,15 @@ body {
 a:link {
     text-decoration: none;
 }
+
+.wght300 {
+    font-weight: 300;
+}
+
+.imgcard2 {
+    height: 181.344px;
+}
+
+.card-title {
+    font-weight: 700;
+}
