@@ -7,6 +7,6 @@ body {
     width: 27px;
 }
 
-hr {
-   background:  #17bdf0 ;
+a:link {
+    text-decoration: none;
 }
