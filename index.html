@@ -44,9 +44,9 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup ">
         <div class="navbar-nav ms-auto">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link" href="#">Quienes somos</a>
-          <a class="nav-link" href="#">Destacados</a>
-          <a class="nav-link" href="#">contacto</a>
+          <a class="nav-link" href="#quienessomos">Quienes somos</a>
+          <a class="nav-link" href="#destacados">Destacados</a>
+          <a class="nav-link" href="#contacto">contacto</a>
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@
 
   <!-- seccion quienes somos -->
 
-  <section class="container pt-4">
+  <section class="container pt-4" id="quienessomos">
     <h1 class="text-light text-center pb-3">¿Quiénes somos?</h1>
     <hr class="p-1 bg-info ">
     <div class="text-light px-4">
@@ -133,8 +133,8 @@
     </div>
   </section>
 
-  <!-- seccion de targetas -->
-  <section class="container text-light text-center mt-5 pt-5">
+  <!-- seccion destacados -->
+  <section class="container text-light text-center mt-5 pt-5" id="destacados">
     <h2 class="pb-3">Destacados</h2>
     <hr class="p-1 bg-info ">
     <div class=" py-3 px-5">
@@ -184,14 +184,24 @@
   </section>
 
   <!-- seccion contacto -->
-  <section class="container text-light text-center mt-5 pt-5">
+  <section class="container text-light text-center mt-5 pt-5 pb-3" id="contacto">
     <h2 class="pb-3">Contacto</h2>
     <hr class="p-1 bg-info ">
 
-    <div data-tf-widget="I6ZgO1DI" style="width:100%;height:400px;"></div>
+    <div data-tf-widget="I6ZgO1DI" style="width:100%;height:400px;" class="py-3 px-5"></div>
     <script src="//embed.typeform.com/next/embed.js"></script>
   </section>
 
+  <!-- footer -->
+  <footer class="bg-info container-fluid py-1">
+    <p class="p-footer text-light centrado-footer ">VIAJES CHILE</p>
+    <div class="text-end centrado-footer">
+		<a href="https://github.com"><i class="fab fa-github-square fa-2x text-light px-1"></i></a>
+		<a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x text-light px-1"></i></a>
+		<a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x text-light px-1"></i></a>
+    <a href="https://web.facebook.com"><i class="fab fa-facebook-square fa-2x text-light px-1"></i></a>
+  </div>
+	</footer>
 
   <!-- js bootstrap 5.1.1 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

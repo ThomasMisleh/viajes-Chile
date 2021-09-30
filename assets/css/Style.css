@@ -22,3 +22,14 @@ a:link {
 .card-title {
     font-weight: 700;
 }
+
+.p-footer {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.centrado-footer {
+    padding-right: 250px;
+    padding-left: 300px;
+    display: inline;
+}
