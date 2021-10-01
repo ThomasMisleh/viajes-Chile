@@ -9,7 +9,7 @@
   <meta name="keywords" content="viajes, sur, norte, chile">
   <meta name="description" name="Viajes de norte a sur de Chile">
   <meta name="copyright" content="Thomas Misleh Harris">
-  <link rel="shortcut icon" href="/assets/img/viajes.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/viajes.svg" type="image/x-icon">
   <title>Viajes Chile</title>
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -22,17 +22,18 @@
   <!-- bootstrap 5.1.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <!-- JavaScript -->
-  <script src="/assets/js/script.js"></script>
+  <!-- Jquery 3.6.0-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- normalize -->
-  <link rel="stylesheet" href="/assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
   <!-- mis estilos CSS -->
-  <link rel="stylesheet" href="/assets/css/Style.css">
+  <link rel="stylesheet" href="assets/css/Style.css">
 </head>
 
 <body>
   <!-- barra de navegacion -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top  ">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top  navbar-color" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="/assets/img/viajes.svg" alt="logo" class="nav-img">
@@ -44,9 +45,9 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup ">
         <div class="navbar-nav ms-auto">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link" href="#quienessomos">Quienes somos</a>
-          <a class="nav-link" href="#destacados">Destacados</a>
-          <a class="nav-link" href="#contacto">contacto</a>
+          <a class="nav-link" href="#quienessomo">Quienes somos</a>
+          <a class="nav-link" href="#destacado">Destacados</a>
+          <a class="nav-link" href="#contact">contacto</a>
         </div>
       </div>
     </div>
@@ -81,16 +82,17 @@
 
   <!-- seccion quienes somos -->
 
-  <section class="container pt-4" id="quienessomos">
-    <h1 class="text-light text-center pb-3">¿Quiénes somos?</h1>
-    <hr class="p-1 bg-info ">
-    <div class="text-light px-4">
+  <main class="container pt-4 d-none d-sm-block" id="quienessomo">
+    <h1 class=" text-center pb-3" id="esconder-seccion1">¿Quiénes somos?</h1>
+    <hr class="p-1 bg-plomo ">
+    <div class=" px-4 ">
       <div class="row">
-        <div class="col-12 col-md-4 mt-4">
-          <div class="text-center bg-info mb-2 ">
+        <div class="col-12 col-md-4 mt-4 ">
+          <div class="text-center bg-plomo mb-2 ">
             <a href="#"><i class="fas fa-plane fa-2x text-light "></i></a>
           </div>
-          <p class="wght300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae minima blanditiis a eos
+          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+            minima blanditiis a eos
             eligendi! Animi
             quos excepturi quo illo rerum quas tempore facere impedit, iure at dolore ut dolor consequuntur molestiae
             tempora hic possimus quaerat dicta cupiditate obcaecati sit! Debitis dolore dolorum officia molestias saepe
@@ -100,10 +102,11 @@
             sed, veritatis delectus recusandae nihil? Neque, cum iure ex aspernatur facere amet consectetur.</p>
         </div>
         <div class="col-12 col-md-4 mt-4 ">
-          <div class="text-center bg-info mb-2 ">
+          <div class="text-center bg-plomo mb-2 ">
             <a href="#"><i class="fas fa-mountain fa-2x text-light d-block d-sm-block d-md-none"></i></a>
           </div>
-          <p class="wght300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae minima blanditiis a eos
+          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+            minima blanditiis a eos
             eligendi! Animi
             quos excepturi quo illo rerum quas tempore facere impedit, iure at dolore ut dolor consequuntur molestiae
             tempora hic possimus quaerat dicta cupiditate obcaecati sit! Debitis dolore dolorum officia molestias saepe
@@ -111,15 +114,16 @@
             Autem mollitia veniam neque eligendi ratione pariatur adipisci maxime quos! Alias in mollitia odio error
             accusamus exercitationem neque illo accusantium praesentium velit laborum voluptatem cum ex omnis blanditiis
             sed, veritatis delectus recusandae nihil? Neque, cum iure ex aspernatur facere amet consectetur.</p>
-          <div class="text-center bg-info ">
+          <div class="text-center bg-plomo ">
             <a href="#"><i class="fas fa-mountain fa-2x text-light d-none d-sm-none d-md-block"></i></a>
           </div>
         </div>
         <div class="col-12 col-md-4 mt-4 ">
-          <div class="text-center bg-info mb-2 ">
+          <div class="text-center bg-plomo mb-2 ">
             <a href="#"><i class="fas fa-route fa-2x text-light"></i></a>
           </div>
-          <p class="wght300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae minima blanditiis a eos
+          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+            minima blanditiis a eos
             eligendi! Animi
             quos excepturi quo illo rerum quas tempore facere impedit, iure at dolore ut dolor consequuntur molestiae
             tempora hic possimus quaerat dicta cupiditate obcaecati sit! Debitis dolore dolorum officia molestias saepe
@@ -131,51 +135,56 @@
       </div>
 
     </div>
-  </section>
+  </main>
 
   <!-- seccion destacados -->
-  <section class="container text-light text-center mt-5 pt-5" id="destacados">
-    <h2 class="pb-3">Destacados</h2>
-    <hr class="p-1 bg-info ">
+  <section class="container  text-center mt-5 pt-5" id="destacado">
+    <h2 class="pb-3" id="esconder-seccion2">Destacados</h2>
+    <hr class="p-1 bg-plomo ">
     <div class=" py-3 px-5">
       <div class="row">
-        <div class="col-12 col-md-3 px-3 pb-4">
+        <div class="col-12 col-md-3 px-3 pb-4 destacados text-light capaefectos1 ">
           <div class="card">
-            <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-            <div class="card-body bg-info text-start pb-5">
+            <img src="assets/img/card1.jpg" class="card-img-top ocultar1 " alt="...">
+            <div class="card-body bg-plomo text-start pb-5 ">
               <h5 class="card-title ">Lorem ipsum dolor sit amet consectetur.</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat. Mollitia
                 aspernatur magnam iusto alias fuga ..</p>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card1">Mas informacion</a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-3 px-3 pb-4">
+        <div class="col-12 col-md-3 px-3 pb-4 destacados text-light capaefectos2">
           <div class="card">
-            <img src="assets/img/card2.jpg" class="card-img-top imgcard2" alt="...">
-            <div class="card-body bg-info text-start pb-5">
+            <img src="assets/img/card2.jpg" class="card-img-top imgcard2  ocultar2" alt="...">
+            <div class="card-body bg-plomo text-start pb-5">
               <h5 class="card-title">Lorem ipsum dolor</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat. Mollitia
                 aspernatur magnam iusto alias fuga similique dolores totam aliquam..</p>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card2">Mas informacion</a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-3 px-3 pb-4">
+        <div class="col-12 col-md-3 px-3 pb-4 destacados text-light capaefectos3">
           <div class="card">
-            <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-            <div class="card-body bg-info text-start pb-4">
+            <img src="assets/img/card3.jpg" class="card-img-top  ocultar3" alt="...">
+            <div class="card-body bg-plomo text-start pb-5">
               <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat. Mollitia
-                aspernatur magnam iusto alias fuga similique dolores totam aliquam..</p>
+                aspernatur magnam iusto alias fuga similique ..</p>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card3">Mas informacion</a>
             </div>
+
           </div>
         </div>
-        <div class="col-12 col-md-3 px-3 pb-4">
+        <div class="col-12 col-md-3 px-3 pb-4 destacados text-light capaefectos4">
           <div class="card">
-            <img src="assets/img/card4.jpg" class="card-img-top " alt="...">
-            <div class="card-body bg-info text-start pb-5">
+            <img src="assets/img/card4.jpg" class="card-img-top  ocultar4" alt="...">
+            <div class="card-body bg-plomo text-start pb-5">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat. Mollitia
                 aspernatur magnam iusto alias fuga similique dolores totam aliquam..</p>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card4">Mas informacion</a>
             </div>
           </div>
         </div>
@@ -183,30 +192,135 @@
     </div>
   </section>
 
+  <!-- modal de botones de seccion destacados-->
+  <div class="modal fade" id="card1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel fw-bold">Lorem ipsum dolor sit.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/assets/img/card1.jpg" class="img-fluid" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetLorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            quaerat. Mollitia
+            aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, </p>quaerat. Mollitia
+          aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+          adipisicing elit. Possimus, quaerat. Mollitia<p>
+            aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, quaerat. Mollitia</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Comprar paquete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="card2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel fw-bold">Lorem ipsum dolor sit.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/assets/img/card2.jpg" class="img-fluid" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetLorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            quaerat. Mollitia
+            aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, </p>quaerat. Mollitia
+          aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+          adipisicing elit. Possimus, quaerat. Mollitia<p>
+            aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, quaerat. Mollitia</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Comprar paquete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="card3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel fw-bold">Lorem ipsum dolor sit.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/assets/img/card3.jpg" class="img-fluid" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetLorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            quaerat. Mollitia
+            aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, </p>quaerat. Mollitia
+          aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+          adipisicing elit. Possimus, quaerat. Mollitia<p>
+            aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, quaerat. Mollitia</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Comprar paquete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="card4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel fw-bold">Lorem ipsum dolor sit.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/assets/img/card4.jpg" class="img-fluid" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetLorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            quaerat. Mollitia
+            aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, </p>quaerat. Mollitia
+          aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+          adipisicing elit. Possimus, quaerat. Mollitia<p>
+            aspernatur magnam iusto alias fuga similique dolores totam aliquamLorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus, quaerat. Mollitia</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Comprar paquete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- seccion contacto -->
-  <section class="container text-light text-center mt-5 pt-5 pb-3" id="contacto">
-    <h2 class="pb-3">Contacto</h2>
-    <hr class="p-1 bg-info ">
+  <section class="container  text-center mt-5 pt-5 pb-3" id="contacto" >
+    <h2 class="pb-3" id="contact">Contacto</h2>
+    <hr class="p-1 bg-plomo ">
 
     <div data-tf-widget="I6ZgO1DI" style="width:100%;height:400px;" class="py-3 px-5"></div>
     <script src="//embed.typeform.com/next/embed.js"></script>
   </section>
 
   <!-- footer -->
-  <footer class="bg-info container-fluid py-1">
+  <footer class="bg-plomo container-fluid py-1 ">
     <p class="p-footer text-light centrado-footer ">VIAJES CHILE</p>
     <div class="text-end centrado-footer">
-		<a href="https://github.com"><i class="fab fa-github-square fa-2x text-light px-1"></i></a>
-		<a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x text-light px-1"></i></a>
-		<a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x text-light px-1"></i></a>
-    <a href="https://web.facebook.com"><i class="fab fa-facebook-square fa-2x text-light px-1"></i></a>
-  </div>
-	</footer>
+      <a href="https://github.com"><i class="fab fa-github-square fa-2x text-light px-1"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x text-light px-1"></i></a>
+      <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x text-light px-1"></i></a>
+      <a href="https://web.facebook.com"><i class="fab fa-facebook-square fa-2x text-light px-1"></i></a>
+    </div>
+  </footer>
 
   <!-- js bootstrap 5.1.1 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
   </script>
+
+  <!-- JavaScript propio-->
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

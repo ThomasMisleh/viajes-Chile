@@ -1,6 +1,6 @@
 body {
     font-family: 'Titillium Web', sans-serif;
-    background-color: #000;
+   
 }
 
 .nav-img {
@@ -33,3 +33,15 @@ a:link {
     padding-left: 300px;
     display: inline;
 }
+
+.navbar-color {
+    background-color: rgb(83, 83, 83);
+    transition: all 1s ease;
+}
+  
+
+.bg-plomo {
+    background-color: rgb(180, 180, 180);
+}
+
+
