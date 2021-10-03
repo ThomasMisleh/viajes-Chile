@@ -1,8 +1,9 @@
 body {
     font-family: 'Titillium Web', sans-serif;
-   
+   background-color: rgba(209, 209, 209, 0.548);
 }
 
+/* tamaño del logo del navbar se dimenciono */
 .nav-img {
     width: 27px;
 }
@@ -34,14 +35,18 @@ a:link {
     display: inline;
 }
 
+/* barra nav aparece al hacer scroll */
 .navbar-color {
     background-color: rgb(83, 83, 83);
     transition: all 1s ease;
 }
   
-
+/* colores principales de la pagina */
 .bg-plomo {
-    background-color: rgb(180, 180, 180);
+    background-color: rgba(68, 23, 23, 0.24);
 }
 
 
+.color-list-group {
+    background-color: rgb(136, 187, 202);
+}

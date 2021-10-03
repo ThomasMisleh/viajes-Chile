@@ -65,6 +65,7 @@ $(document).ready(function () {
     });
   });
 
+  //tooltip en los iconos seccion quienes somos
   var tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]')
   );

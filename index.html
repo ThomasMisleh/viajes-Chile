@@ -42,8 +42,8 @@
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup ">
-        <div class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" data-target=".navbar-ex1-collapse">
+        <div class="navbar-nav ms-auto ">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           <a class="nav-link" href="#quienessomo">Quienes somos</a>
           <a class="nav-link" href="#destacado">Destacados</a>
@@ -89,9 +89,11 @@
       <div class="row">
         <div class="col-12 col-md-4 mt-4 ">
           <div class="text-center bg-plomo mb-2 ">
-            <a href="#"><i class="fas fa-plane fa-2x text-light "></i></a>
+            <a href="#"><i class="fas fa-plane fa-2x text-light " data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Ver vuelos"></i></a>
           </div>
-          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Molestiae
             minima blanditiis a eos
             eligendi! Animi
             quos excepturi quo illo rerum quas tempore facere impedit, iure at dolore ut dolor consequuntur molestiae
@@ -105,7 +107,8 @@
           <div class="text-center bg-plomo mb-2 ">
             <a href="#"><i class="fas fa-mountain fa-2x text-light d-block d-sm-block d-md-none"></i></a>
           </div>
-          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Molestiae
             minima blanditiis a eos
             eligendi! Animi
             quos excepturi quo illo rerum quas tempore facere impedit, iure at dolore ut dolor consequuntur molestiae
@@ -115,14 +118,17 @@
             accusamus exercitationem neque illo accusantium praesentium velit laborum voluptatem cum ex omnis blanditiis
             sed, veritatis delectus recusandae nihil? Neque, cum iure ex aspernatur facere amet consectetur.</p>
           <div class="text-center bg-plomo ">
-            <a href="#"><i class="fas fa-mountain fa-2x text-light d-none d-sm-none d-md-block"></i></a>
+            <a href="#"><i class="fas fa-mountain fa-2x text-light d-none d-sm-none d-md-block" data-bs-toggle="tooltip"
+                data-bs-placement="top" title="Lugares para descansar"></i></a>
           </div>
         </div>
         <div class="col-12 col-md-4 mt-4 ">
           <div class="text-center bg-plomo mb-2 ">
-            <a href="#"><i class="fas fa-route fa-2x text-light"></i></a>
+            <a href="#"><i class="fas fa-route fa-2x text-light" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Las mejores rutas"></i></a>
           </div>
-          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+          <p class="wght300 quienessomos verde shadow p-3  bg-body rounded">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Molestiae
             minima blanditiis a eos
             eligendi! Animi
             quos excepturi quo illo rerum quas tempore facere impedit, iure at dolore ut dolor consequuntur molestiae
@@ -138,41 +144,71 @@
   </main>
 
   <!-- seccion destacados -->
-  <section class="container  text-center mt-5 pt-5" id="destacado">
+  <section class="container  text-center mt-5 pt-5 " id="destacado">
     <h2 class="pb-3" id="esconder-seccion2">Destacados</h2>
     <hr class="p-1 bg-plomo ">
-    <div class=" py-3 px-5">
+    <div class=" py-3 px-5 ">
       <div class="row">
         <div class="col-12 col-md-3 px-3 pb-4 destacados text-light capaefectos1 ">
           <div class="card">
             <img src="assets/img/card1.jpg" class="card-img-top ocultar1 " alt="...">
-            <div class="card-body bg-plomo text-start pb-5 ">
+            <div class="card-body bg-plomo text-start pb-4 ">
               <h5 class="card-title ">Lorem ipsum dolor sit amet consectetur.</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat. Mollitia
                 aspernatur magnam iusto alias fuga ..</p>
-              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card1">Mas informacion</a>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card1">Ver oferta</a>
+              <div class="card-body text-end ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-credit-card-2-back text-success" viewBox="0 0 16 16">
+                  <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" />
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
+                </svg>
+                <a href="#" class="card-link text-success">$984.059</a>
+              </div>
+              <p class="card-text"><small class="text-muted">Última actualización hace 15 minutos</small></p>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-3 px-3 pb-4 destacados text-light capaefectos2">
           <div class="card">
             <img src="assets/img/card2.jpg" class="card-img-top imgcard2  ocultar2" alt="...">
-            <div class="card-body bg-plomo text-start pb-5">
+            <div class="card-body bg-plomo text-start pb-4">
               <h5 class="card-title">Lorem ipsum dolor</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat. Mollitia
                 aspernatur magnam iusto alias fuga similique dolores totam aliquam..</p>
-              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card2">Mas informacion</a>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card2">Ver oferta</a>
+              <div class="card-body text-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-credit-card-2-back text-success" viewBox="0 0 16 16">
+                  <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" />
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
+                </svg>
+                <a href="#" class="card-link text-success">$454.800</a>
+              </div>
+              <p class="card-text"><small class="text-muted">Última actualización hace 40 minutos</small></p>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-3 px-3 pb-4 destacados text-light capaefectos3">
           <div class="card">
             <img src="assets/img/card3.jpg" class="card-img-top  ocultar3" alt="...">
-            <div class="card-body bg-plomo text-start pb-5">
+            <div class="card-body bg-plomo text-start pb-4">
               <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat. Mollitia
                 aspernatur magnam iusto alias fuga similique ..</p>
-              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card3">Mas informacion</a>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card3">Ver oferta</a>
+              <div class="card-body text-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-credit-card-2-back text-success" viewBox="0 0 16 16">
+                  <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" />
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
+                </svg>
+                <a href="#" class="card-link text-success">$90.876</a>
+              </div>
+              <p class="card-text"><small class="text-muted">Última actualización hace 4 días</small></p>
             </div>
 
           </div>
@@ -180,17 +216,61 @@
         <div class="col-12 col-md-3 px-3 pb-4 destacados text-light capaefectos4">
           <div class="card">
             <img src="assets/img/card4.jpg" class="card-img-top  ocultar4" alt="...">
-            <div class="card-body bg-plomo text-start pb-5">
+            <div class="card-body bg-plomo text-start pb-4">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat. Mollitia
                 aspernatur magnam iusto alias fuga similique dolores totam aliquam..</p>
-              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card4">Mas informacion</a>
+              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#card4">Ver oferta</a>
+              <div class="card-body text-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-credit-card-2-back text-success" viewBox="0 0 16 16">
+                  <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" />
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
+                </svg>
+                <a href="#" class="card-link text-success">$666.668</a>
+              </div>
+              <p class="card-text"><small class="text-muted">Última actualización hace 15 minutos</small></p>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+    <p>
+      <button class="btn bg-plomo shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+          height="16" fill="currentColor" class="bi bi-menu-button" viewBox="0 0 16 16">
+          <path
+            d="M0 1.5A1.5 1.5 0 0 1 1.5 0h8A1.5 1.5 0 0 1 11 1.5v2A1.5 1.5 0 0 1 9.5 5h-8A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-8z" />
+          <path
+            d="m7.823 2.823-.396-.396A.25.25 0 0 1 7.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+        </svg>
+        Destinos dentro de chile
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body shadow">
+        <img src="" alt="">
+        <p class="fw-bold">LAS MEJORES OFERTAS DE ALOJAMIENTOS VACACIONALES</p>
+        <div class="row ">
+          <div class="col-12 col-md-3">
+            <img src="assets/img/card1.jpg" class="img-fluid rounded-3 shadow   bg-body" alt="...">
+          </div>
+          <div class="col-12 col-md-3">
+            <img src="assets/img/card3.jpg" class="img-fluid rounded-3 shadow  bg-body" alt="...">
+          </div>
+          <div class="col-12 col-md-3">
+            <img src="assets/img/card4.jpg" class="img-fluid rounded-3 shadow   bg-body" alt="...">
+          </div>
+          <div class="col-12 col-md-3">
+            <img src="assets/img/card1.jpg" class="img-fluid rounded-3 shadow   bg-body" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
 
   <!-- modal de botones de seccion destacados-->
   <div class="modal fade" id="card1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -295,7 +375,7 @@
   </div>
 
   <!-- seccion contacto -->
-  <section class="container  text-center mt-5 pt-5 pb-3" id="contacto" >
+  <section class="container  text-center mt-5 pt-5 pb-3 " id="contacto">
     <h2 class="pb-3" id="contact">Contacto</h2>
     <hr class="p-1 bg-plomo ">
 
@@ -303,14 +383,17 @@
     <script src="//embed.typeform.com/next/embed.js"></script>
   </section>
 
+
   <!-- footer -->
+
   <footer class="bg-plomo container-fluid py-1 ">
     <p class="p-footer text-light centrado-footer ">VIAJES CHILE</p>
     <div class="text-end centrado-footer">
-      <a href="https://github.com"><i class="fab fa-github-square fa-2x text-light px-1"></i></a>
-      <a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x text-light px-1"></i></a>
-      <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x text-light px-1"></i></a>
-      <a href="https://web.facebook.com"><i class="fab fa-facebook-square fa-2x text-light px-1"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github-square fa-2x text-light px-1"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x text-light px-1"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x text-light px-1"></i></a>
+      <a href="https://web.facebook.com" target="_blank"><i
+          class="fab fa-facebook-square fa-2x text-light px-1"></i></a>
     </div>
   </footer>
 
